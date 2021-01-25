@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: cornflowerblue;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .box {
+            width: 500px;
+            height: 500px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <pre>
+function main() {
+
+<div class="codetypewriter"></div>
+}</pre>
+
+    </div>
+    <script src="./js/CodeTypewriter.js"></script>
+    <script>
+        new CodeTypewriter({
+            element: document.querySelector(".codetypewriter"),
+            data: "\tcout << \"Hello World\";\n\treturn 0;",
+            animation: "lineFeed", //line,both,lineFeed
+            //cursor: "vertical" //transverse
+            time: 200
+        }).init();
+    </script>
+</body>
+
+</html>
